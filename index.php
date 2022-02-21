@@ -24,14 +24,14 @@ Kirby::plugin('hashsandsalt/kirby3-seo', [
               'metatitle'         => $page->title(),
               'metadesc'          => $page->seometa(),
               'metakeywords'      => $page->seotags(),
-              'metarobots'        => 'index, follow, noodp',
+              'metarobots'        => $site->globalNoIndex()->toBool() ? 'none' : ( $page->noIndex()->toBool() ? 'noindex' : 'index' ) . ',' . ( $page->noFollow()->toBool() ? 'nofollow' : 'follow' ),
               'metaurl'           => $page->url(),
               'metaimage'         => $page->shareimage()->toFile() ? $page->shareimage()->toFile()->crop(1280, 720)->url() : ' ',
 
               // Facebook Meta
               'metafbtype'         => 'website',
               'metafbsitename'     => $site->title(),
-              'metafblocale'       => 'en_GB',
+              'metafblocale'       => $kirby->language()->locale(LC_ALL) ?? 'en_GB',
 
               // Twitter Meta
               'metatwcard'         => 'summary_large_image',

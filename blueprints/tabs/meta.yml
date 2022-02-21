@@ -28,3 +28,17 @@ columns:
             info:       "{{ file.dimensions }}"
             image:
               ratio:    2/1
+
+          indexfollwheadling:
+            type: headline
+            label: Search engine settings
+            numbered: false
+          noindex:
+            type: toggle
+            label: Prevent indexing?
+            default: false
+          nofollow:
+            type: toggle
+            label: Prevent the following of links?
+            default: false
+

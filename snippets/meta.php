@@ -1,5 +1,3 @@
-<!-- META TAGS -->
-
 <?= Html::tag('title', [$metatitle]).PHP_EOL ?>
 <?= Html::tag('meta', null, ["name" => "description", "content" => $metadesc]).PHP_EOL ?>
 <?= Html::tag('meta', null, ["name" => "keywords", "content" => $metakeywords]).PHP_EOL ?>

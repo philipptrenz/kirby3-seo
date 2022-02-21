@@ -42,3 +42,13 @@ fields:
     label:             Youtube
     type:              url
     width:             1/3
+
+  dangerzone:
+    type:              headline
+    label:             Danger Zone
+    numbered:          false
+  globalNoIndex:
+    label:             Prevent indexing of the entire website?
+    type:              toggle
+    default:           false
+    width:             1/3
