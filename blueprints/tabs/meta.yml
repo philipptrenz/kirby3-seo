@@ -19,7 +19,9 @@ columns:
         type:           fields
         fields:
           shareimage:
-            label:      Share Image
+            label:      
+              en: Share Image
+              de: Share-Bild
             type:       files
             uploads:
               template: shot
@@ -31,18 +33,24 @@ columns:
 
           indexfollwheadling:
             type: headline
-            label: Search engine settings
+            label: 
+              en: Search engine settings
+              de: Suchmaschinen-Einstellungen
             numbered: false
           noindex:
             type: toggle
-            label: Enable noindex?
+            label: 
+              en: Enable noindex?
+              de: Aktiviere noindex?
             text:
               - "index"
               - "noindex"
             default: false
           nofollow:
             type: toggle
-            label: Enable nofollow?
+            label:
+              en: Enable nofollow?
+              de: Aktiviere nofollow?
             text:
               - "follow"
               - "nofollow"

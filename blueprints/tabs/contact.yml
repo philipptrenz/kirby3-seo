@@ -1,57 +1,81 @@
-label:                 Contact
-icon:                  globe
+label:                 
+  en: Contact
+  de: Kontakt
+icon: globe
 
-fields:
-  telephone:
-    label:             Telephone
-    type:              tel
-    width:             1/3
-  emailaddress:
-    label:             Email Address
-    type:              email
-    width:             1/3
-  socialtwitterURL:
-    label:             Twitter
-    type:              url
-    width:             1/3
-  twittercreator:
-    label:             Twitter Creator
-    type:              text
-    width:             1/3
-  sociallinkedinURL:
-    label:             LinkedIn
-    type:              url
-    width:             1/3
-  socialfaceBookURL:
-    label:             Facebook
-    type:              url
-    width:             1/3
-  socialinstagramURL:
-    label:             Instagram
-    type:              url
-    width:             1/3
-  socialtiktokURL:
-    label:             Tiktok
-    type:              url
-    width:             1/3
-  socialpinterestURL:
-    label:             Pinterest
-    type:              url
-    width:             1/3
-  socialyoutubeURL:
-    label:             Youtube
-    type:              url
-    width:             1/3
+columns:
+  - width: 1/3
+    fields:
+      address:
+        label: 
+          en: Address
+          de: Adresse
+        type: textarea
+        required: true
+        buttons: false
+  - width: 1/3
+    fields:
+      telephone:
+        label:             
+          en: Telephone
+          de: Telefon
+        type: tel
+      emailaddress:
+        label:             
+          en: Email Address
+          de: Email-Adresse
+        type: email
 
-  dangerzone:
-    type:              headline
-    label:             Danger Zone
-    numbered:          false
-  globalNoIndex:
-    label:             Enable noindex for entire website?
-    type:              toggle
-    default:           false
-    text:
-      - "index"
-      - "noindex"
-    width:             1/3
+  - width: 1/1
+    fields:
+      socialtwitterURL:
+        label:             Twitter
+        type:              url
+        width:             1/3
+      twittercreator:
+        label:             Twitter Creator
+        type:              text
+        width:             1/3
+      sociallinkedinURL:
+        label:             LinkedIn
+        type:              url
+        width:             1/3
+      socialfaceBookURL:
+        label:             Facebook
+        type:              url
+        width:             1/3
+      socialinstagramURL:
+        label:             Instagram
+        type:              url
+        width:             1/3
+      socialtiktokURL:
+        label:             Tiktok
+        type:              url
+        width:             1/3
+      socialpinterestURL:
+        label:             Pinterest
+        type:              url
+        width:             1/3
+      socialyoutubeURL:
+        label:             Youtube
+        type:              url
+        width:             1/3
+
+  - width: 1/1
+    fields:
+      dangerzone:
+        type: headline
+        label:             
+          en: Danger Zone
+          de: Gefahrenzone
+        numbered: false
+      globalNoIndex:
+        label:             
+          en: Enable noindex and nofollow for entire website?
+          de: Aktiviere noindex und nofollow für gesamte Seite?
+        type: toggle
+        default: false
+        text:
+          - "index,follow"
+          - "noindex,nofollow"
+        width: 1/3
