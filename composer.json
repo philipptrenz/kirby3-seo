@@ -1,11 +1,14 @@
 {
-  "name": "hashandsalt/kirby3-seo",
+  "name": "philipptrenz/kirby3-seo",
   "description": "Kirby 3 - SEO tools",
   "type": "kirby-plugin",
   "license": "MIT",
   "authors": [{
     "name": "James Steel",
     "email": "hello@hashandsalt.com"
+  },{
+    "name": "Philipp Trenz",
+    "email": "mail@philipptrenz.de"
   }],
 
   "require": {

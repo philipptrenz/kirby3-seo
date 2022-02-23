@@ -2,7 +2,7 @@
 
 @include_once __DIR__ . '/vendor/autoload.php';
 
-Kirby::plugin('hashsandsalt/kirby3-seo', [
+Kirby::plugin('philipptrenz/kirby3-seo', [
 
     'snippets' => [
       'seo/meta'    => __DIR__ . '/snippets/meta.php',
