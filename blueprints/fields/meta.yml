@@ -2,17 +2,21 @@ type:           group
 fields:
 
     seotitle:
-      label:    SEO Title
-      type:     text
-      icon:     font
-      width:    1/2
+      label:
+        en: SEO Title
+        de: SEO-Titel
+      type: text
+      icon: font
+      width: 1/2
       required: true
     seotags:
-      label:    Keywords
-      type:     tags
-      width:    1/2
+      label: Keywords
+      type: tags
+      width: 1/2
     seometa:
-      label:    Meta Description
-      type:     textarea
-      size:     small
+      label:
+        en: Meta Description
+        de: Meta-Beschreibung
+      type: textarea
+      size: small
       required: true
