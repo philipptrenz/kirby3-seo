@@ -19,4 +19,5 @@ fields:
         de: Meta-Beschreibung
       type: textarea
       size: small
+      buttons: false
       required: true
