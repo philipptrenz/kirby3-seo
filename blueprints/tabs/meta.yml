@@ -35,10 +35,16 @@ columns:
             numbered: false
           noindex:
             type: toggle
-            label: Prevent indexing?
+            label: Enable noindex?
+            text:
+              - "index"
+              - "noindex"
             default: false
           nofollow:
             type: toggle
-            label: Prevent the following of links?
+            label: Enable nofollow?
+            text:
+              - "follow"
+              - "nofollow"
             default: false
 

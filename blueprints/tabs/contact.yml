@@ -48,7 +48,10 @@ fields:
     label:             Danger Zone
     numbered:          false
   globalNoIndex:
-    label:             Prevent indexing of the entire website?
+    label:             Enable noindex for entire website?
     type:              toggle
     default:           false
+    text:
+      - "index"
+      - "noindex"
     width:             1/3
