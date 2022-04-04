@@ -1,7 +1,7 @@
 label:                 
   en: Contact
   de: Kontakt
-icon: globe
+icon: chat
 
 columns:
   - width: 1/3
