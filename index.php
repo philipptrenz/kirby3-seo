@@ -31,7 +31,7 @@ Kirby::plugin('philipptrenz/kirby3-seo', [
               // Facebook Meta
               'metafbtype'         => 'website',
               'metafbsitename'     => $site->title(),
-              'metafblocale'       => $kirby->language()->locale(LC_ALL) ?? 'en_GB',
+              'metafblocale'       => $kirby->language() !== null ? $kirby->language()->locale(LC_ALL) : 'en_GB',
 
               // Twitter Meta
               'metatwcard'         => 'summary_large_image',
