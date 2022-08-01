@@ -6,7 +6,8 @@ Kirby::plugin('philipptrenz/kirby3-seo', [
 
     'snippets' => [
       'seo/meta'    => __DIR__ . '/snippets/meta.php',
-      'seo/favicon' => __DIR__ . '/snippets/favicon.php'
+      'seo/favicon' => __DIR__ . '/snippets/favicon.php',
+      'seo/hreflang' => __DIR__ . '/snippets/hreflang.php',
     ],
 
     'blueprints' => [
