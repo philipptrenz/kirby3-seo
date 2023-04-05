@@ -8,7 +8,7 @@ fields:
       type: text
       icon: font
       width: 1/2
-      required: true
+      required: false
     seotags:
       label: Keywords
       type: tags
@@ -20,4 +20,4 @@ fields:
       type: textarea
       size: small
       buttons: false
-      required: true
+      required: false
