@@ -3,10 +3,10 @@
 return function ($page, $kirby, $site) {
 
     $shareimage = ' ';
-    if ($img = $page->shareimage()->toFile()) {
-        $shareimage = $img->crop(1280, 720)->url();
-    } else if ($img = $site->shareimage()->toFile()) {
-        $shareimage = $img->crop(1280, 720)->url();
+    if ($page->shareimage()->isNotEmpty()) {
+        $shareimage = $page->shareimage()->toFile()->crop(1280, 720)->url();
+    } else if ($site->shareimage()->isNotEmpty()) {
+        $shareimage = $site->shareimage()->toFile()->crop(1280, 720)->url();
     }
 
     return [
